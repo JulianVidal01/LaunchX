@@ -1,0 +1,367 @@
+:root{
+    --fuenteHeading: 'PT sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/** Globales **/
+
+.contenedor{
+    width: min(80%, 200rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+.no-margin{
+    margin:0;
+}
+.no-padding{
+    padding:0;
+}
+.centrar-texto{
+    text-align: center;
+}
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header{
+    background-image: url(../img/Portada.jpg);
+}
+/** Header **/
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/Portada.jpg);
+    height: 80rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto,.no-margin{
+    text-align: center;
+    color: var(--blanco);
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+.header__h2, .no-margin{
+    font-size: 4rem;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+.barra{
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px){
+    .barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+.logo{
+    color: var(--blanco);
+}
+.logo__nombre{
+    font-weight: normal;
+}
+.logo__bold{
+    font-weight: 700;
+}
+.img__logo{
+    max-width: 50%;
+}
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+.section__contenedor{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 4rem;
+}
+.section__imagen{
+    max-width: 80%;
+    margin: 2.5rem 2rem 2.5rem 5rem;
+}
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin: none;
+}
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline;
+
+    }
+}
+.boton:hover{
+    cursor: pointer;
+}
+.boton--primario{
+    background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+.widget-curso__label,
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.widget-curso__info,
+.curso__info{
+    font-weight: 400;
+}
+.widget-curso__label,
+.widget-curso__info,
+.curso__label,
+.curso__info{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/** Pastel **/
+.pasteles__contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .pasteles__contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.pastel{
+    background-color: #00000021;
+    padding: 1rem;
+}
+.pastel__nombre{
+    font-size: 4rem;
+}
+.pastel__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.pastel__nombre,
+.pastel__precio{
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+    margin: 1rem;
+    text-align: center;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+.pastel__inf{
+    color:#000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+/** Sobre Nosotros **/
+
+@media (min-width: 768px) {    
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+}
+}
+
+/** Curso **/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width:768px ) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.curso:last-of-type{
+    border: none;
+}
+
+/** Formulario **/
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea{
+    height: 10rem;
+}
+.footer__texto{
+    color: var(--blanco);
+    text-align: center;
+}
+
+/** TABLA DE PEDIDOS **/
+
+.pedidos{
+    background-color: var(--blanco);
+    border-radius: 8px;
+}
+table{
+    color: var(--fuentePrincipal);
+    font-size: 14px;
+    border-collapse: collapse;
+}
+thead{
+    background: var(--negro);
+    border-radius: 8px;
+}
+th {
+    color: #fff;
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    border-bottom: solid 1px #fff;
+}
+tbody tr:hover{
+    background: var(--primario);
+    color: #fff;
+}
+
+@media (max-width:30em) {
+    table{ 
+        width: 100%;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    table thead{
+        display: none;
+    }
+    table td[data-titulo]{
+        display: flex;
+    }
+    table td[data-titulo]::before{
+        content: attr(data-titulo);
+        width: 90px;
+        color: black;
+        font-weight: 500;
+    }
+
+     
+    section#sec4.section2{
+        height: 1600px;
+    }
+    
+}

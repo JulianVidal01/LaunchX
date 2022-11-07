@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img class="logo__nombre no-margin centrar-texto img__logo" src="img/LogoPasteleria.png" alt="">
+                </a>
+                
+
+            <nav class="navegacion">
+                <a href="#" class="navegacion__enlace">Nosotros</a>
+                <a href="Administrador.html#Pasteles" class="navegacion__enlace">Pasteles en Stock</a>
+                <a href="Administrador.html#adicionales" class="navegacion__enlace">Adicionales en Stock</a>
+                <a href="Administrador.html#pedidos" class="navegacion__enlace">Pedidos</a>
+            </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="header__h2" class="no-margin">Cakex</h2>
+            <p class="no-margin">Hola Admin!</p>
+        </div>
+    </header>
+    <main class="contenedor"> 
+
+        <section id="Pasteles">
+            <h1>Pasteles en Stock</h1>
+            <div class="pasteles__contenedor">
+                <div class="pastel">
+                        <img class="pastel__imagen" src="img/ChocolateCake.jpg" alt="img Chocolate cake">
+                        <div class="pastel__informacion">
+                            <p class="pastel__nombre">Pastel de chocolate</p>
+                            <p class="pastel__precio">$125.000</p>
+                            <p class="pastel__inf">1 en Stock</p>
+                        </div>
+                </div> <!--.pastel-->
+                <div class="pastel">
+                        <img class="pastel__imagen" src="img/Cheesecake.jpg" alt="img Cheesecake">
+                        <div class="pastel__informacion">
+                            <p class="pastel__nombre">Cheesecake</p>
+                            <p class="pastel__precio">$150.000</p>
+                            <p class="pastel__inf">3 en Stock</p>
+                        </div>
+                </div> <!--.pastel-->
+                <div class="pastel">
+                    <img class="pastel__imagen" src="img/BirthdayCake.jpg" alt="img Birthday Cake">
+                    <div class="pastel__informacion">
+                        <p class="pastel__nombre">Pastel de cumpleaños</p>
+                        <p class="pastel__precio">$170.000</p>
+                        <p class="pastel__inf">2 en Stock</p>
+                    </div>
+                </div> <!--.pastel-->
+            </div> <!--.pasteles__contenedor-->
+        </section>
+    
+        <section id="adicionales">
+            <h1>Adicionales en Stock</h1>
+            <div class="pasteles__contenedor">
+                <div class="pastel">
+                        <img class="pastel__imagen" src="img/strawberries.jpg" alt="img strawberries">
+                        <div class="pastel__informacion">
+                            <p class="pastel__nombre">Fresas</p>
+                            <p class="pastel__precio">$15.000</p>
+                            <p class="pastel__inf"> <br> 3 en Stock</p>
+                        </div>
+                </div> <!--.pastel-->
+                <div class="pastel">
+                        <img class="pastel__imagen" src="img/Maracuya.jpeg" alt="img Maracuya">
+                        <div class="pastel__informacion">
+                            <p class="pastel__nombre">Helado de maracuya</p>
+                            <p class="pastel__precio">$10.000</p>
+                            <p class="pastel__inf"> <br> 1 en Stock</p>
+                        </div>
+                </div> <!--.pastel-->
+                <div class="pastel">
+                    <img class="pastel__imagen" src="img/macadamia.jpg" alt="img macadamia">
+                    <div class="pastel__informacion">
+                        <p class="pastel__nombre">Macadamia</p>
+                        <p class="pastel__precio">$20.000</p>
+                        <p class="pastel__inf">5 en Stock<br></p>
+                    </div>
+                </div> <!--.pastel-->
+            </div> <!--.pasteles__contenedor-->
+        </section>
+        <section id="Pedidos">
+            <h1>Pedidos Actuales</h1>
+            <div class="pedidos">
+                <table>
+                    <thead>
+                        <tr>
+                           <th>Numero de pedido</th> 
+                           <th>Nombre</th> 
+                           <th>Telefono</th> 
+                           <th>E-mail</th> 
+                           <th>Dirección</th>
+                           <th>Pastel</th>
+                           <th>Adicional</th> 
+                           <th>Observaciones</th>
+                           <th>Acepta terminos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-titulo="Numero de pedido">159</td>
+                            <td data-titulo="Nombre">Jose Antonio</td>
+                            <td data-titulo="Telefono">3256325633</td>
+                            <td data-titulo="E-mail">Joseantonio01@gmail.com</td>
+                            <td data-titulo="Dirección">Cra 1d # 62-52</td>
+                            <td data-titulo="Pastel">Pastel de Chocolate</td>
+                            <td data-titulo="Adicional"></td>
+                            <td data-titulo="Observaciones"></td>
+                            <td data-titulo="Acepta terminos">Si</td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Numero de pedido">160</td>
+                            <td data-titulo="Nombre">Maria Morales</td>
+                            <td data-titulo="Telefono">3258545633</td>
+                            <td data-titulo="E-mail">MariaM25@gmail.com</td>
+                            <td data-titulo="Dirección">Cra 100 # 52-22</td>
+                            <td data-titulo="Pastel">Cheesecake</td>
+                            <td data-titulo="Adicional">Fresas</td>
+                            <td data-titulo="Observaciones">N/A</td>
+                            <td data-titulo="Acepta terminos">Si</td>
+                        </tr>
+                        <tr>
+                            <td data-titulo="Numero de pedido">161</td>
+                            <td data-titulo="Nombre">Camila Fernandez</td>
+                            <td data-titulo="Telefono">3256325523</td>
+                            <td data-titulo="E-mail">Camifz12@outlook.com</td>
+                            <td data-titulo="Dirección">Calle 14 # 63-52</td>
+                            <td data-titulo="Pastel">Cheesecake</td>
+                            <td data-titulo="Adicional"></td>
+                            <td data-titulo="Observaciones"></td>
+                            <td data-titulo="Acepta terminos">Si</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+</main>
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="barra">
+                    <a class="logo" href="index.html">
+                        <img class="logo__nombre no-margin centrar-texto img__logo" src="img/LogoPasteleria.png" alt="">
+                    </a>
+                    
+            </div>
+            <p class="footer__texto">©Todos los derechos Reservados 2022. Realizado por Julian Vidal</p>
+        </footer>
+    </body>
+    </html>
