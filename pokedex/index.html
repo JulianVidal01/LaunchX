@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/pngwing.com.png" />
+</head>
+<body>
+<header class="header">
+    <h1>Pokedex</h1>
+</header>
+    <section>
+        <form action=""  onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off">
+            <button class="Buscar" type="submit" action=""  onsubmit="searchPokemon(event)">Buscar</button>
+        </form>
+    </section>
+    <div class="Contenedor__Pokemon">
+        <div class="data">
+        <div class="Color1">
+        <div class="camara"></div>
+        <div class="camara2"></div>
+        <div class="camara3"></div>
+        <div class="Rojo"></div>
+        <div class="Amarillo1"></div>
+        <div class="Amarillo2"></div>
+            <div class="nombrePoke" data-poke-name>¿Cual es este Pokemon?</div>
+            <div class="img-cont">
+            <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="./img/pngwing.com.png"/>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="Visagra">
+
+        </div>
+        <div class="Color2">
+        <div class="Estadisticas">
+        <div data-poke-card class="poke-card">
+            
+            <div data-poke-id></div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./js/js.js"></script>
+</footer>
+
+</html>
